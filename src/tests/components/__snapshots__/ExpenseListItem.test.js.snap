@@ -11,9 +11,9 @@ exports[`renders ExpenseListItem component 1`] = `
     </h3>
   </Link>
   <p>
-    200
-     - 
-    604800000
+    $200.00
+    -
+    Jan 7th, 1970
   </p>
 </div>
 `;
