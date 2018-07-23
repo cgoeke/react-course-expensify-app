@@ -3,7 +3,7 @@
 exports[`renders ExpensesSummary component with 1 expense 1`] = `
 <div>
   <p>
-    Viewing 1 expenses totalling $5.00
+    Viewing 1 expense totalling $5.00
   </p>
 </div>
 `;
