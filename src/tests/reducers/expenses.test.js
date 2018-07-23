@@ -1,5 +1,15 @@
+import database from '../../firebase/firebase';
 import expenses from '../fixtures/expenses'; 
 import expensesReducer from "../../reducers/expenses";
+
+beforeEach((done) => {
+    const expensesData = {};
+    expenses.forEach(({ id, description, note, amount, createdAt }) => {
+        expensesData[id] = { description, note, amount, createdAt };        
+    });
+
+    database.ref('expenses').set(expensesData).then(() => done());
+});
 
 test('sets default state', () => {
     const state = expensesReducer(undefined, { type: '@@INIT'});
@@ -62,6 +72,15 @@ test('should not edit expense if id not found', () => {
             description
         }
     };
+    const state = expensesReducer(expenses, action);
+    expect(state).toEqual(expenses);
+});
+
+test('sets expenses', () => {
+    const action = {
+        type: 'SET_EXPENSES',
+        expenses
+    }
     const state = expensesReducer(expenses, action);
     expect(state).toEqual(expenses);
 });
