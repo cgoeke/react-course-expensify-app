@@ -27,5 +27,8 @@ exports[`renders Header component 1`] = `
   >
     Help
   </NavLink>
+  <button>
+    Logout
+  </button>
 </header>
 `;

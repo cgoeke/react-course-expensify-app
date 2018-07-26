@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders LoginPage component 1`] = `
+<div>
+  <button
+    type="submit"
+  >
+    Login
+  </button>
+</div>
+`;
