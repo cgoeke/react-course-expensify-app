@@ -1,19 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders ExpenseListItem component 1`] = `
-<div>
-  <Link
-    replace={false}
-    to="/edit2"
-  >
-    <h3>
+<Link
+  className="list-item"
+  replace={false}
+  to="/edit2"
+>
+  <div>
+    <h3
+      className="list-item__title"
+    >
       test description 2
     </h3>
-  </Link>
-  <p>
+    <span
+      className="list-item__subtitle"
+    >
+      Jan 7th, 1970
+    </span>
+  </div>
+  <h3
+    className="list-item__data"
+  >
     $2.00
-    -
-    Jan 7th, 1970
-  </p>
-</div>
+  </h3>
+</Link>
 `;

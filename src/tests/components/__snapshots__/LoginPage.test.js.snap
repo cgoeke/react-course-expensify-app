@@ -1,11 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders LoginPage component 1`] = `
-<div>
-  <button
-    type="submit"
+<div
+  className="login"
+>
+  <div
+    className="login__box"
   >
-    Login
-  </button>
+    <h1
+      className="login__title"
+    >
+      Expensify
+    </h1>
+    <p>
+      Keep track of your expenses
+    </p>
+    <button
+      className="button"
+      type="submit"
+    >
+      Login with Google
+    </button>
+  </div>
 </div>
 `;

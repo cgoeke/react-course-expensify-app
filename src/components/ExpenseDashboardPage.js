@@ -4,12 +4,11 @@ import ExpenseListFilters from './ExpenseListFilters';
 import ExpensesSummary from './ExpensesSummary';
 
 const ExpenseDashboardPage = () => (
-    <div>
-        <h1>Expense Dashboard Component</h1>
-        <ExpensesSummary />
-        <ExpenseListFilters />
-        <ExpenseList />
-    </div>
+  <div>
+    <ExpensesSummary />
+    <ExpenseListFilters />
+    <ExpenseList />
+  </div>
 );
 
 export default ExpenseDashboardPage;

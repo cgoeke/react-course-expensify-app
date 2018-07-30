@@ -4,15 +4,22 @@ import ExpenseForm from './ExpenseForm';
 import { startAddExpense } from '../actions/expenses';
 
 export const AddExpensePage = (props) => (
-    <div>
-        <h1>Add Expense Component</h1>
-        <ExpenseForm 
-            onSubmit={(expense) => {
-                props.startAddExpense(expense);
-                props.history.push('/');
-            }}
-        />
+  <div>
+    <div className="page-header">
+      <div className="content-container">
+        <h1 className="page-header__title">Add Expense</h1>
+      </div>
+
     </div>
+    <div className="content-container">
+      <ExpenseForm 
+        onSubmit={(expense) => {
+          props.startAddExpense(expense);
+          props.history.push('/');
+        }}
+      />
+    </div>
+  </div>
 );
 
 const mapDispatchToProps = (dispatch) => {
